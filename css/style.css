@@ -1,0 +1,196 @@
+body {
+    font-family: 'Arial';
+    font-size: 2rem;
+    max-width: 2440px;
+    margin: 0 auto;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+main {
+    background-color: #E2C499;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 1rem 2rem 0;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+main.state {
+    grid-template-columns: 1fr 3fr;
+}
+
+main.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+section img {
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+}
+
+aside {
+    background-color: #e0b374;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+aside ul li a:hover {
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+    color: #2E2E2E;
+}
+
+footer {
+    background: linear-gradient(to bottom, #E99554, #D07C4D);
+    margin: 0;
+    padding: 0.5rem 4rem;
+    font-size: 1rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+}
+
+input[type="text"], input[type="email"], textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    width: 100%;
+}
+
+#emailError {
+    color: red;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#national-parks-table {
+    border: solid 1px #2E2E2E;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+#national-parks-table caption {
+    font-size: 2rem;
+    padding: 1rem;
+    background-color: #2E2E2E;
+    color: #E2C499;
+}
+
+#national-parks-table tr:nth-child(odd) {
+    background-color: #E2C499;
+}
+
+#national-parks-table tr:nth-child(even) {
+    background-color: #e0b374;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    max-width: 2440px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+}
+
+.hero.home {
+    background-image: url('../assets/cedar_canyon.jpg');
+}
+
+.hero.contact {
+    background-image: url('../assets/contact_hero.jpg');
+}
+
+.hero.slc {
+    background-image: url('../assets/slc.jpg');
+}
+
+.hero.logan {
+    background-image: url('../assets/logan.jpg');
+}
+
+.hero.stgeo {
+    background-image: url('../assets/stgeo.jpg');
+}
+
+.hero h1 {
+    position: absolute;
+    bottom: 0;
+    right: 10%;
+    background-color: #2e2e2eb7;
+    font-size: 6rem;
+    color: #d07c4d;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, #E99554, #D07C4D);
+    padding: 1rem;
+    margin: 0;
+}
+
+.navbar li {
+    display: inline;
+    margin-right: 2rem;
+    background-color: #E2C499;
+    padding: 0.5rem;
+}
+
+.navbar li:hover {
+    background-color: #e0b374;
+}
+
+.navbar li.active {
+    background-color: #dda454;
+}
+
+.details {
+    margin: 1rem 0;
+    padding: 1rem 0;
+}
+
+.float-r {
+    float: right;
+    margin-left: 1rem;
+}
+
+.float-l {
+    float: left;
+    margin-right: 1rem;
+}
+
+.clear {
+    clear: both;
+}
+

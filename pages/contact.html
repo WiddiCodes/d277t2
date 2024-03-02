@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="contact">
+    <header class="hero contact">
+        <h1>Contact</h1>
+    </header>
+        <nav>
+            <ul class="navbar">
+                <li class="nav-item"><a href="../index.html">Home</a></li>
+                <li class="nav-item"><a href="saltLakeCity.html">Salt Lake City</a></li>
+                <li class="nav-item"><a href="logan.html">Logan</a></li>
+                <li class="nav-item"><a href="stGeorge.html">St. George</a></li>
+                <li class="nav-item active"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    <main class="form">
+        <form action="#">
+            <h2>Contact Us</h2>
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required />
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" required />
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="j.doe@gmail.com" required />
+            <label for="confirm_email">Confirm Email:</label>
+            <p id="emailError" class="email_error_message"></p>
+            <input type="email" id="confirm_email" name="confirm_email" placeholder="j.doe@gmail.com" onkeyup="checkEmail()" required />
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" placeholder="Could I get more information on Lagoon?" required></textarea>
+            <input type="submit" value="Submit" id="submitBtn" disabled />
+        </form>
+    </main>
+    <footer>
+        <p>Created and designed by Tyler Widdison for WGU's D277 task 2</p>
+    </footer>
+    <script src="../javascript/formHandler.js"></script>
+</body>
+</html>
